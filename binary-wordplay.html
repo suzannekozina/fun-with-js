@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- May have to use a different word list. Icelandic accents are giving me some trouble with the binary search. -->
+    <meta charset="utf-8">
+    <meta name="viewport"    content="width=device-width, initial-scale=1.0">
+    <title>krummilagid</title>
+</head>
+<body>
+
+<p>Click the button to find the rotation point in the following list of words from a traditional Icelandic children's song.<br>
+First line of lyrics = Krummi svaf í klettagjá, kaldri vetrarnóttu á<br>
+<br>
+First line of words in alphabetical order = á, í, kaldri, klettagjá, Krummi, svaf, vetrarnóttu <br>
+<br>
+<i>BONUS</i>: Print the list to the console log</p>
+
+<button onclick="getPointIndexNumber()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function findRotationPoint(words) {
+    const firstWord = words[0];
+
+    var floorIndex = 0;
+    var ceilingIndex = words.length - 1;
+
+    while (floorIndex < ceilingIndex) {
+
+        var guessIndex = Math.floor(floorIndex + ((ceilingIndex - floorIndex) / 2));
+
+        if (words[guessIndex] > firstWord) {
+            // go right
+            floorIndex = guessIndex;
+        } else {
+            // go left
+            ceilingIndex = guessIndex;
+        }
+
+        // if floor and ceiling have converged
+        if (floorIndex + 1 === ceilingIndex) {
+
+            // between floor and ceiling is where we flipped to the beginning
+            // so ceiling is alphabetically first
+            break;
+        }
+    }
+
+    return ceilingIndex;
+}
+  var words = [
+    'krummi',
+    'svaf',
+    'vetrarnottu',
+    'a', // <-- rotates here!
+    'i',
+    'kaldri',
+    'klettagja',
+];
+console.log(words);
+
+function getPointIndexNumber() {
+    document.getElementById("demo").innerHTML = findRotationPoint(words);
+}
+
+</script>
+
+</body>
+</html>
