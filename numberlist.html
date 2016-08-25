@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to loop through a block of code as long as i is less than or equal to 20.<br>
+BONUS: 3 should be replaced with "THREE", and 7 should be replaced with "SEVEN"<br>
+<i>EXTRA BONUS</i>: Print the list to the console log</p>
+
+<button onclick="myNumbers()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(n) {
+  var numbers = [];
+  
+  for(var i=1; i<=n; i++){
+    numbers.push(i);
+  }
+
+  numbers[2] = "THREE"
+  numbers[6] = "SEVEN"
+
+  return numbers
+}
+
+console.log(myFunction(20))
+
+function myNumbers() {
+    document.getElementById("demo").innerHTML = myFunction(20);
+}
+
+</script>
+
+</body>
+</html>
