@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+<!-- Check out Codecademy's example here: https://www.codecademy.com/courses/objects-ii/1/5?curriculum_id=506324b3a7dffd00020bf661#  -->
+   <title>List attributes of Object with for-in loop</title> 
+  </head>
+  <body>
+  <p>List ALL the attributes of an object with "for-in" <br>
+    <i>To see the JavaScript, open dev tools (SHIFT+CTRL+I) and click on the HTML file under the "Source" tab. Click on the "Console" tab to see the console output.  </p>
+    <script>
+    var leif = {
+        fullName: "Leif Eriksson",
+        occupation: "explorer",
+        age: 2000,
+      };
+    
+    for(var attributes in leif) {
+        console.log(leif[attributes]);
+      };
+    </script>
+  </body>
+</html
