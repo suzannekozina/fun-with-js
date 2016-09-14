@@ -1,2 +1,2 @@
 # fun-w-js
-Storing short examples I've created for more practice with JavaScript
+Storing short examples I've created for lightweight practice with JavaScript
