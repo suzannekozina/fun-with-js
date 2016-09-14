@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+  <!-- Check out Codecademy's example here: https://www.codecademy.com/en/courses/objects-ii/3/3?curriculum_id=506324b3a7dffd00020bf661  -->
+   <title>this and prototype</title> 
+  </head>
+  <body>
+  <p>Extend a class method with the very cool JavaScript "prototype" object. Read more about JavaScript's prototype object in Elequent JavaScript, Chapter 6, "The Secret Life of Objects". <br>
+    <i>To see the JavaScript, open dev tools (SHIFT+CTRL+I) and click on the HTML file under the "Sources" tab. Click on the "Console" tab to see the console output.  </p>
+    <script>
+    function Explorer(name, discovery) {
+          this.name = name;
+          this.discovery = discovery;
+      }
+      Explorer.prototype.sayName = function() {
+          console.log("Hi my name is " + this.name);
+      };
+      
+      // define a Leif class
+      function Leif(name) {
+          this.name = name;
+          this.discovery = discovery;
+      }
+      
+      // oops I want Leif to ALSO use the sayName method like all the other Explorers...
+      Leif.prototype = new Explorer();
+      
+      var leif = new Explorer("Leif");
+      leif.sayName();
+    </script>
+  </body>
+</html
