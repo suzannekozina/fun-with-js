@@ -6,7 +6,7 @@
   </head>
   <body>
   <p>Extend a class method with the very cool JavaScript "prototype" object. Read more about JavaScript's prototype object in Elequent JavaScript, Chapter 6, "The Secret Life of Objects". <br>
-    <i>To see the JavaScript, open dev tools (SHIFT+CTRL+I) and click on the HTML file under the "Sources" tab. Click on the "Console" tab to see the console output.  </p>
+    <br><i>To see the JavaScript example, open dev tools (SHIFT+CTRL+I) and click on the HTML file under the "Sources" tab. Click on the "Console" tab to see the console output.  </p>
     <script>
     function Explorer(name, discovery) {
           this.name = name;
