@@ -6,7 +6,7 @@
   </head>
   <body>
   <p>List ALL the attributes of an object with "for-in" <br>
-    <i>To see the JavaScript, open dev tools (SHIFT+CTRL+I) and click on the HTML file under the "Source" tab. Click on the "Console" tab to see the console output.  </p>
+    <i>To see the JavaScript, open dev tools (SHIFT+CTRL+I) and click on the HTML file under the "Sources" tab. Click on the "Console" tab to see the console output.  </p>
     <script>
     var leif = {
         fullName: "Leif Eriksson",
