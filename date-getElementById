@@ -1,0 +1,24 @@
+<html>
+<!--JavaScript Global Object used: `Date()`  
+			https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+	JavaScript Methods used: `.getElementbyID` & `.innerHTML` 
+		Learn more about each method at the following links
+		`.getElementbyID`
+			https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+			http://www.w3schools.com/jsref/met_document_getelementbyid.asp
+	
+	HTML Button syntax
+		`<button>`
+			https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button-->
+<body>
+
+<h1>JavaScript Global Object - Date</h1>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
