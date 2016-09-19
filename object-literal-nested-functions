@@ -48,4 +48,4 @@ console.log('Your bill is '+cashRegister.total);
 
 </script>
 </body>
-</html
+</html>
