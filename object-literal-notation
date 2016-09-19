@@ -8,7 +8,7 @@
     <p> <h2>Example of JavaScript's Object Literal notation</h2><br>
     <i>To see the JavaScript, open dev tools (SHIFT+CTL+I) and click on the HTML file under the "Source" tab. Click on the "Console" tab to see the console output.  </p>
   
-
+<script> 
 var cashRegister = {
     total:0,
     add: function(itemCost){
@@ -21,3 +21,6 @@ var cashRegister = {
 
 //Show the total bill
 console.log('Your bill is '+cashRegister.total);
+</script>
+</body>
+</html>
