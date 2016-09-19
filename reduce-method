@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+  <!-- About the reduce method: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+  W3 example for array #reduce: http://www.w3schools.com/jsref/jsref_reduce.asp  -->
+   <title>REDUCE</title> 
+  </head>
+  <body>
+  <h2>Use JavaScript's reduce method to get the sum of all the numbers in an array<br></h2>
+    <p><i>To see the JavaScript, open dev tools (SHIFT+CTRL+I) and click on the HTML file under the "Sources" tab. Click on the "Console" tab to see the console output.  </p>
+    <script>
+    var numbers = [1, 2, 3, 4];
+
+    function getSum(total, num) {
+        return total + num;
+    }
+    
+    console.log(numbers.reduce(getSum));      
+    </script>
+  </body>
+</html
