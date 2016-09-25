@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+//so simple can be easy to forget
+
+<html>
+<body>
+
+<p> Increment Counter by 2 </p>
+
+<script>
+for (var i = 3; i <= 10; i = i + 2) {
+    console.log(i);
+}
+
+</script>
+
+</body>
+</html>
