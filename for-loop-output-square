@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+//simple for loop - variable added 
+
+<html>
+<body>
+
+<p> Outputs the square instead of i </p>
+
+<script>
+for (var i = 100; i <= 150; i ++) {
+    var square = i*i;
+    console.log(square);
+}
+
+</script>
+
+</body>
+</html>
