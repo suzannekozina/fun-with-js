@@ -42,5 +42,5 @@ function add (firstName , lastName , email , phoneNumber) {
         phoneNumber : phoneNumber
     }
 }
-add( "Egill" ,"Eigilsson" , "egil.eigilsson@example.com", "123-123-5869" );
+add( "Egill", "Eigilsson", "egil.eigilsson@example.com", "123-123-5869" );
 list();
